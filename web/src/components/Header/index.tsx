@@ -7,10 +7,11 @@ import backIcon from '../../assets/images/icons/back.svg'
 
 interface HeaderProps {
     title: string;
+    description?: string
 }
 
 const Header: React.FC<HeaderProps> = (props) => {
-    const { title, children } = props
+    const { title, children, description } = props
     return (
         <header className="page-header">
             <div className="top-bar-container">
@@ -22,6 +23,7 @@ const Header: React.FC<HeaderProps> = (props) => {
 
             <div className="header-content">
                 <strong>{title}</strong>
+                { description && <p>{description}</p>}
                 {children}
             </div>
             
