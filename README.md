@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="logo" src="./imagens/logo.png" />
+  <img alt="logo" src="./.github/logo.png" />
 <p>
 
 # Introdução
@@ -19,10 +19,10 @@ O projeto foi desenvolvido utilizando as tecnologias ReactJS no frontend, NodeJS
 
 <h2 align="center">Telas da aplicação mobile</h2>
 <p align="center">
-    <img alt="Tela principal mobile" width="230px" height="400px" src="./.github/Principal.jpg" />
-    <img alt="design do projeto" width="230px" height="400px" src="./.github/QueroSerProffy.jpg" />
-    <img alt="design do projeto" width="230px" height="400px" src="./.github/Filtros.jpg" />
-    <img alt="design do projeto" width="230px" height="400px" src="./.github/Listagem.jpg" />
-    <img alt="design do projeto" width="230px" height="400px" src="./.github/Favoritos.jpg" />
+    <img alt="Tela principal mobile" width="200px" height="350px" src="./.github/Principal.jpg" />
+    <img alt="design do projeto" width="200px" height="350px" src="./.github/QueroSerProffy.jpg" />
+    <img alt="design do projeto" width="200px" height="350px" src="./.github/Filtros.jpg" />
+    <img alt="design do projeto" width="200px" height="350px" src="./.github/Listagem.jpg" />
+    <img alt="design do projeto" width="200px" height="350px" src="./.github/Favoritos.jpg" />
 <p>
 
