@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -27,25 +27,32 @@ function Favorites() {
 
     return (
         <View style={styles.container}>
-            <Header title='My favorites Proffys'/>
+            <Header title='Meus proffys favoritos.'/>
 
-            <ScrollView
-                style={styles.teacherList}
-                contentContainerStyle={{
-                    paddingHorizontal: 16,
-                    paddingBottom: 16,
-                }}
-            >
-                {favorites.map((teacher: Teacher) => {
-                    return (
-                        <TeacherItem
-                            key={teacher.id}
-                            teacher={teacher}
-                            favorited
-                        />
-                    )
-                })}
-            </ScrollView>
+            {favorites.length > 0 ? (
+                <ScrollView
+                    style={styles.teacherList}
+                    contentContainerStyle={{
+                        paddingHorizontal: 16,
+                        paddingBottom: 16,
+                    }}
+                >
+                    {favorites.map((teacher: Teacher) => {
+                        return (
+                            <TeacherItem
+                                key={teacher.id}
+                                teacher={teacher}
+                                favorited
+                            />
+                        )
+                    })}
+                </ScrollView>
+            ) : (
+                <View style={styles.emptyTeacher}>
+                    <Text style={styles.emptyTeacherText}>Nenhum proffy favoritado.</Text>
+                </View>
+            )}
+
         </View>
     );
 }

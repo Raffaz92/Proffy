@@ -7,7 +7,15 @@ const styles = StyleSheet.create({
     },
     teacherList: {
         marginTop: -40,
-    }
+    },
+    emptyTeacher: {
+        marginTop: 16,
+        alignItems: 'center',
+    },
+    emptyTeacherText: {
+        fontFamily: "Poppins_400Regular",
+        fontSize: 18  
+    },
 })
 
 export default styles

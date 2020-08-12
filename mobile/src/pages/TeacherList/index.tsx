@@ -22,7 +22,7 @@ import { useFocusEffect } from '@react-navigation/native';
 function TeacherList() {
     const opacityValue = new Animated.Value(0);
     const [isFiltersVisible, setIsFiltersVisible] = useState(true)
-    const [subject, setSubject] = useState('Matemática');
+    const [subject, setSubject] = useState('Química');
     const [week_day, setWeekDay] = useState('1');
     const [time, setTime] = useState('15:00');
     const [teachers, setTeachers] = useState([])
@@ -144,7 +144,7 @@ function TeacherList() {
              </ScrollView>
             ) : (
                 <View style={styles.emptyTeacher}>
-                    <Text style={styles.emptyTeacherText}>Nenhum proffy encontrado.</Text>
+                    <Text style={styles.emptyTeacherText}>Nenhum proffy listado.</Text>
                 </View>
             )}
            
