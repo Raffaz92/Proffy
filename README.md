@@ -13,7 +13,7 @@ O projeto foi desenvolvido utilizando as tecnologias ReactJS no frontend, NodeJS
 
 <h2 align="center">Tela Principal da aplicação WEB</h2>
 <p align="center">
-  <img alt="Página principal web" width="1200px" src="./imagens/Main.png" />
+  <img alt="Página principal web" width="1200px" src="./.github/Main.png" />
 <p>
 
 
