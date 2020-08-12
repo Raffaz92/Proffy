@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import { View, Image, Text } from 'react-native'
 import styles from './styles';
@@ -10,11 +10,12 @@ import { useNavigation } from '@react-navigation/native';
 
 interface HeaderProps {
     title: string;
+    headerRight?: ReactNode
 }
 
 const Header: React.FC<HeaderProps> = (props) => {
     const navigation = useNavigation()
-    const { title } = props
+    const { title, children, headerRight } = props
     function handleGoBack() {
         navigation.navigate('Landing')
     }
@@ -27,7 +28,11 @@ const Header: React.FC<HeaderProps> = (props) => {
                 </BorderlessButton>
                 <Image source={logoImg} resizeMode="contain" />
             </View>
-            <Text style={styles.title}>{title}</Text>
+            <View style={styles.header}>
+                <Text style={styles.title}>{title}</Text>
+                {headerRight}
+            </View>
+            { children }
         </View>
     )
 }
